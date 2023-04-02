@@ -37,6 +37,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--prime-color);
 }
+.header-bg {
+  background: #555555;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -44,6 +47,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*================ HEADER ================  */
 .items-top-line {
   color: var(--hero-title-color);
@@ -52,11 +56,23 @@ body {
   line-height: 16px;
   letter-spacing: 0.1em;
 }
+.logo {
+  margin-right: 100px;
+}
 .top-line {
   background: var(--prime-color);
   padding-top: 40px;
 }
+.for-flex {
+  display: flex;
+  background: #555555;
+}
 .list-top-line {
+  display: flex;
+  margin-left: 100px;
+  gap: 30px;
+}
+.header-right {
 }
 .phone-number {
   font-weight: 600;
