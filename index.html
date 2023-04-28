@@ -4,238 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BarberShop</title>
-    <link rel="stylesheet" href="
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Barbershop</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
   </head>
   <body>
-    <header class="container for-flex">
-      <img claas="logo" src="./images/logo/Logo.png" alt="logo" />
-        <div class="top-line">
-          <ul class="list list-top-line">
-            <li class="items-top-line">About</li>
-            <li class="items-top-line">Services and prices</li>
-            <li class="items-top-line">Barbers</li>
-            <li class="items-top-line">Contacts</li>
-          </ul>
-        </div>
-        <div class="header-right">
-          <a class="link phone-number" href="tel:+380441111111"
-            >+38 044 111 11 11</a
-          >
-          <button class="button" type="button">Online-booking</button>
-        </div>
+    <header class="header-page">
+      <div class="container">
+        <a href="./index.html">
+          <svg class="logo-icon" width="70px" height="55px">
+            <use href="./symbol-defs.svg#icon-camera"></use>
+          </svg>
+        </a>
+        <button class="button-menu">
+          
+        </button>
       </div>
     </header>
-    <main>
-      <!-- ================================================ HERO ================================================================= -->
-      <section container>
-        <div>
-          <a href="">Instagram</a>
-          <a href="">Youtube</a>
-        </div>
-        <div class="hero-fake-back">
-          <p class="sub-text">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="sub-tex-hero">
-            We are experts in trendy men’s haircuts. We work quickly, carefully
-            and with style.
-          </p>
-        </div>
-      </section>
-      <!-- ================================================= About ============================================================ -->
-      <section>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/about/img-1.jpg"
-              alt="the master shaves the client's neck"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/about/img-2.jpg"
-              alt="the master shaves the back of the client's head"
-            />
-          </li>
-        </ul>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
-        <p>
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p>
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <button type="button">ONLINE-BOOKING</button>
-      </section>
-      <!-- ==================================================Price list==================================================== -->
-      <section>
-        <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
-        <ul class="list">
-          <li>Men’s haircut from 300 uah.</li>
-          <li>Beard trim from 300 uah.</li>
-          <li>Mustache trim from 200 uah.</li>
-          <li>Straight razor shave from 200 uah.</li>
-        </ul>
-        <ul class="list">
-          <li>Trainee’s haircut from 50 uah.</li>
-          <li>Haircut under the nozzle from 200 uah.</li>
-          <li>Children’s haircut (0-12 y.o.) from 300 uah.</li>
-          <li>Camouflage of gray hair from 200 uah.</li>
-        </ul>
-        <button type="button">ONLINE-BOOKING</button>
-      </section>
-      <!-- ====================================================== WHY WE ================================================================== -->
-
-      <section>
-        <ul class="list">
-          <li>
-            <h2>600 <span>+</span></h2>
-            <p>Satisfied customers per day</p>
-          </li>
-          <li>
-            <h2>50 <span>+</span></h2>
-            <p>Awards for excellent service</p>
-          </li>
-          <li>
-            <h2>20 <span>+</span></h2>
-            <p>Kyiv’s best barbers</p>
-          </li>
-          <li>
-            <h2>100 <span>+</span></h2>
-            <p>Gifts for regular customers</p>
-          </li>
-        </ul>
-        <p>Old traditional school</p>
-        <h2>¿Why people come to us?</h2>
-        <p>
-          Only good things are said about us. But it's better to see and feel 1
-          time than read 10 times.
-        </p>
-      </section>
-      <!-- ====================================================== MASTERS ============================================================== -->
-      <section>
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/masters/img1.jpg"
-              alt="the master cuts the client's hair"
-            />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img
-              src="./images/masters/img2.jpg"
-              alt="the master cuts the client's hair"
-            />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img
-              src="./images/masters/img3.jpg"
-              alt="the master cuts the client's hair"
-            />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-          </li>
-        </ul>
-      </section>
-      <!-- =================================================== Portfolio ================================================= -->
-      <section>
-        <h3 hidden>Portfolio</h3>
-        <p>In Latin, "barba" means "beard"</p>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/portfolio/Rectangle25.jpg"
-              alt="the master cuts the client's hair"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/Rectangle26.jpg"
-              alt="the master shaves the client"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/Rectangle27.jpg"
-              alt="the master shaves the client"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/Rectangle28.jpg"
-              alt="the master cuts the client's hair"
-            />
-          </li>
-        </ul>
-      </section>
-      <!-- ===================================================== Contacts============================================================= -->
-      <section>
-        <div>
-          <h2>Online-booking</h2>
-          <ul class="list">
-            <li>Name*</li>
-            <li>Phone*</li>
-            <li>Message</li>
-          </ul>
-          <button type="button">SEND</button>
-        </div>
-        <div>
-          <h2>Contacts</h2>
-          <address>
-            <ul class="list">
-              <li>
-                <a class="link" href="">st. Vasilkivska, 7A Kyiv, 08132</a>
-              </li>
-              <li>
-                <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
-              </li>
-              <li>
-                <a class="link" href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <h4>Working hours</h4>
-          <p>Every day from 9:00 to 22:00</p>
-        </div>
-      </section>
-    </main>
-    <!-- ================================================== Footer ====================================================== -->
-    <footer>
-      <p>Copyright 2020</p>
-      <ul class="list">
-        <li>
-          <a href="">Instagram</a>
-        </li>
-        <li>
-          <a href="">Youtube</a>
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>
