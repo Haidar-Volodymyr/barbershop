@@ -15,21 +15,46 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   </head>
-  <body>
+  <body class="body-container">
     <header class="header-page">
       <div class="container">
-        <a href="./index.html">
+        <nav class="nav-contr">
+        <a href="./index.html" class="logo">
           <svg class="logo-icon" width="70px" height="55px">
             <use href="./symbol-defs.svg#icon-camera"></use>
           </svg>
         </a>
-        <button class="button-menu">
-          
+        <ul class="nav-list-header list">
+          <li class="items-nav-header">About</li>
+          <li class="items-nav-header">Services and prices</li>
+          <li class="items-nav-header">Barbers</li>
+          <li class="items-nav-header">Contacts</li>
+        </ul>
+        </nav>
+        <div class="contr-tel-btn">
+          <a class="tel-header link" href="+380441111111">+38 044 111 11 11</a>
+          <button class="btn-header" type="button">Online-booking</button>
+        </button></div>
+        
+        <button class="mobile-menu">
+          <svg class="" width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
         </button>
       </div>
     </header>
+    <main>
+      <!-- ======================== HERO =============================== -->
+       <section class="hero"> 
+        <div class="container contr-hero">
+        <p class="sub-text">A hair salon for men in Kyiv</p>
+        <h1>BarberShop</h1>
+        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+</div>
+      </section>
+    </main>
   </body>
 </html>
