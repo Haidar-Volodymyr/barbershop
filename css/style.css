@@ -52,17 +52,18 @@ body {
 
  @media screen and (max-width: 767px) { 
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 31px;
+    padding-right: 31px;
     margin-left: auto;
     margin-right: auto;
   }
-  .contr-hero{
-    display: block;
+  .contr-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
   }
+
   .header-page {
     position: absolute;
     width: 100%;
@@ -80,6 +81,7 @@ body {
     display: none;
   }
   .mobile-menu{
+    display: block;
     background: transparent;
     border: none;
     fill: var(--hero-title-color);
@@ -121,7 +123,6 @@ body {
   .text-title{
     font-family: var(--second-font);
   font-style: normal;
-  width: 100%;
   font-weight: 700;
   font-size: 48px;
   line-height: calc(56/48);
@@ -139,14 +140,125 @@ line-height: calc(26/16);
 letter-spacing: 0.02em;
 color: var(--sub-title-color);
  } 
+ /* ============== ABOUT =============== */
+ .about{
+  padding-top: 84px;
+  padding-bottom: 84px;
+ }
+ .left-side-about{
+  display: none;
+ }
+ .sub-title-about{
+  display: flex;
+  align-items: center;
+  font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-transform: uppercase;
+color: var(--title-color);
+margin-bottom: 20px;
+
+ }
+ .sub-title-about::before{
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: var(--title-color);
+  margin-right: 20px;
+ }
+ .title-about{
+  max-width: 306px;
+  font-family: var(--second-font);
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: calc(33/28);
+letter-spacing: 0.05em;
+margin-bottom: 20px;
+color: var(--title-color);
+ }
+ .sub-text-about1{
+  max-width: 418px;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(26/16);
+letter-spacing: 0.02em;
+color: var(--prime-color);
+margin-bottom: 20px;
+ }
+ .sub-text-about2{
+ max-width: 418px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(26/14);
+letter-spacing: 0.02em;
+color: var(--prime-color);
+ }
+ .btn-about{
+  margin-top: 52px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid var(--button-color);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--title-color);
+    font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16/12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+ }
+ /* ============ SERVICES AND PRICES ============*/
+.services-prices{
+  height: 738px;
+  background: #111319;
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ), url(/images/prices/bg-mob.jpg);
+  background-size: cover;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
+.sub-text-prices{
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+margin-top: 84px;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+margin-bottom: 20px;
+}
+.prices-title{
+font-family: var(--second-font);
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: calc(47/40);
+letter-spacing: 0.05em;
+color: var(--hero-title-color);
+margin-bottom: 44px;
+ }
+}
+
+
 @media screen and (min-width: 768px) {
   .container {
-    display: flex;
-    max-width: 1157px;
-    justify-content: space-between;
+    max-width: 1170px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .contr-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
   }
   .header-page{
     width: 100%;
@@ -162,7 +274,9 @@ color: var(--sub-title-color);
   .mobile-menu{
     display: none;
   }
-  .contr-tel-btn{margin-left: 65px;}
+  .contr-tel-btn{
+    margin-right: 17px;
+  }
    .nav-contr{
     display: flex;
   }
@@ -299,6 +413,84 @@ letter-spacing: 0.02em;
 width: 360px;
 color: var(--sub-title-color);
  }
+ /* =============== ABOUT =============== */
+ .about{
+  padding-top: 100px;
+  padding-bottom: 100px;
+ }
+ .contr-about{
+  display: flex;
+}
+.list-foto-about{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-right: 30px;
+}
+ .sub-title-about{
+  display: flex;
+  align-items: center;
+  font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-transform: uppercase;
+color: var(--title-color);
+margin-bottom: 20px;
+ }
+ .sub-title-about::before{
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: var(--title-color);
+  margin-right: 20px;
+ }
+ .title-about{
+  max-width: 306px;
+  font-family: var(--second-font);
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: calc(33/28);
+letter-spacing: 0.05em;
+margin-bottom: 20px;
+color: var(--title-color);
+ }
+ .sub-text-about1{
+  max-width: 418px;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(26/16);
+letter-spacing: 0.02em;
+color: var(--prime-color);
+margin-bottom: 20px;
+ }
+ .sub-text-about2{
+ max-width: 418px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(26/14);
+letter-spacing: 0.02em;
+color: var(--prime-color);
+ }
+ .btn-about{
+  margin-top: 72px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid var(--button-color);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--title-color);
+    font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16/12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+ }
 }
 
 @media screen and (min-width: 1158px) {
@@ -313,7 +505,20 @@ color: var(--sub-title-color);
   }
   .btn-header{
     margin-left: 43px;
-    margin-bottom: 0;}
+    margin-bottom: 0;
+  }
+  /* ====================== ABOUT ========= */
+  .about{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .list-foto-about{
+    flex-direction: row;
+    gap: 30px;
+  }
+  .btn-about{
+    margin-top: 52px;
+  }
 }
 
 
